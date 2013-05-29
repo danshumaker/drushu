@@ -13,7 +13,7 @@ projects[drushu][download][url] = https://github.com/danshumaker/drushu.git
 projects[drushu][download][branch] = master
 
 ; Includes ====================================================================
-includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/dd1c740967b139a03002848bc1ec83e20ca929f7:/drupal-org.make
+;includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/dd1c740967b139a03002848bc1ec83e20ca929f7:/drupal-org.make
 ;includes[] = "https://raw.github.com/makara/buildkit_plus_v7/master/base.make"
 
 ; Libraries ===================================================================

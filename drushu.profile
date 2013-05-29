@@ -1,4 +1,4 @@
-<!--?php
+<?php
 /**
 * Return a description of the profile for the initial installation screen.
 *
