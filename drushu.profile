@@ -20,6 +20,7 @@ function drushu_profile_details() {
  * we are guaranteed a full bootstrap here and not there.
  */
 function drushu_install_tasks($install_state) {
+  print "INSIDE drushu_install_tasks";
   $tasks['chmodfiles'] = array(
     'display_name' => st('Set dir permissions to 777 for files'),
     'display' => TRUE,
@@ -39,11 +40,21 @@ return $tasks;
 }
 
 function chmodfiles() {
- chmod( DRUPAL_ROOT . '/sites/default/files', 777);
+ $dir = DRUPAL_ROOT . '/sites/default/files';
+ $res = chmod( $dir, 777);
+ print "chmoded " . $dir;
+ if ($res) {
+   print "\nsucess\n";
+ } else {
+   print "\nfailed\n";
 }
 function ckeditor_set() {
-   db_update('wysiwyg')->fields(array('editor' => 'ckeditor',))
-     ->condition('format','filtered_html')
-     ->execute();
+   $record = array('editor' => 'ckeditor', 'format' => 'filtered_html');
+   $res = drupal_write_record('wysiwyg', $record);
+   if ($res) {
+     print "\nsucess\n";
+   } else {
+     print "\nfailure\n";
+   }
 }
 ?>
