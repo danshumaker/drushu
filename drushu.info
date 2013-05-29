@@ -1,6 +1,6 @@
 name = DruShu
 description = Shumaker Drupal Install Profile
-version = VERSION
+version = 1.0
 core = 7.x
 
 ; Core
@@ -35,8 +35,8 @@ dependencies[] = views_ui
 dependencies[] = wysiwyg
 
 ; Theme
-theme[] = drushu
+;theme[] = drushu
 
 ;  Variables
-variables['drupal_stale_file_handle'] = 1
+;variables['drupal_stale_file_handle'] = 1
 
