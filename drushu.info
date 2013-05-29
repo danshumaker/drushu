@@ -19,7 +19,6 @@ dependencies[] = taxonomy
 dependencies[] = update
 
 ; Contrib
-dependencies[] = admin
 dependencies[] = admin_menu
 dependencies[] = advanced_help
 dependencies[] = coder
@@ -27,9 +26,6 @@ dependencies[] = coder_review
 dependencies[] = ckeditor
 dependencies[] = ctools
 dependencies[] = devel
-dependencies[] = diff
-dependencies[] = features
-dependencies[] = strongarm
 dependencies[] = token
 dependencies[] = transliteration
 dependencies[] = views
