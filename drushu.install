@@ -7,7 +7,6 @@
 function drushu_install() {
   include_once DRUPAL_ROOT . '/profiles/minimal/minimal.install';
   minimal_install();
-  print "\nINSIDE THE drushu_install funciton\n";
   $types = array(
     array(
       'type' => 'page',
