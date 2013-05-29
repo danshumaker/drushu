@@ -6,7 +6,7 @@ core = 7.x
 ; Core
 ; dependencies[] = book
 dependencies[] = block
-dependencies[] = contact
+dependencies[] = contextual
 dependencies[] = dblog
 dependencies[] = field_ui
 dependencies[] = file
@@ -26,6 +26,8 @@ dependencies[] = coder_review
 dependencies[] = ckeditor
 dependencies[] = ctools
 dependencies[] = devel
+dependencies[] = module_filter 
+dependencies[] = libraries 
 dependencies[] = token
 dependencies[] = transliteration
 dependencies[] = views
@@ -33,7 +35,7 @@ dependencies[] = views_ui
 dependencies[] = wysiwyg
 
 ; Theme
-theme[] = drushu_theme
+theme[] = drushu
 
 ;  Variables
 variables['drupal_stale_file_handle'] = 1

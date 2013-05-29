@@ -38,6 +38,9 @@ function drushu_profile_modules() {
  */
 function drushu_profile_tasks(&$task, $url) {
   // Insert default user-defined node types into the database.
+  //
+  //
+  print "\nINSIDE THE PROFILE_TASKS funciton\n";
   $types = array(
     array(
       'type' => 'page',
