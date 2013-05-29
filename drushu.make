@@ -7,10 +7,10 @@ projects[] = "drupal"
 ; includes[] = drupal-org-core.make
 
 ; Profiles ====================================================================
-;projects[buildkit][type] = profile
-;projects[buildkit][download][type] = git
-;projects[buildkit][download][url] = http://git.drupal.org/project/buildkit.git
-;projects[buildkit][download][branch] = 7.x-2.0-beta4
+projects[drushu][type] = profile
+projects[drushu][download][type] = git
+projects[drushu][download][url] = https://github.com/danshumaker/drushu.git
+projects[drushu][download][branch] = master
 
 ; Includes ====================================================================
 includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/dd1c740967b139a03002848bc1ec83e20ca929f7:/drupal-org.make
@@ -27,7 +27,6 @@ libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEd
 libraries[ckeditor][destination] = "libraries"
 
 ; Modules =====================================================================
-; projects[fontyourface][subdir] = "contrib"
 projects[ctools][subdir] = "contrib"
 projects[devel][subdir] = "contrib"
 projects[libraries][subdir] = "contrib"
@@ -41,8 +40,8 @@ projects[advanced_help][subdir] = "contrib"
 projects[coder][subdir] = "contrib"
 
 ; Themes ======================================================================
-projects[] = "zen"
-;projects[omega_tm][download][type] = "git"
-;projects[omega_tm][download][url] = "dshumaker@git.drupal.org:sandbox/dshumaker/1638120.git"
-;projects[omega_tm][type] = "theme"
+projects[] = "drushu_theme"
+;projects[drushu_theme][download][type] = git
+;projects[drushu_theme][download][url] = https://github.com/danshumaker/drushu_theme.git
+;projects[drushu_theme][type] = "theme"
 
