@@ -37,7 +37,7 @@ dependencies[] = views_ui
 dependencies[] = wysiwyg
 
 ; Theme
-theme[] = drushu
+theme[] = drushu_theme
 
 ;  Variables
 variables['drupal_stale_file_handle'] = 1
