@@ -41,7 +41,7 @@ function drushu_install_tasks($install_state) {
 
 function chmodfiles() {
   $dir = DRUPAL_ROOT . '/sites/default/files';
-  $res = chmod( $dir, 777);
+  $res = chmod( $dir, 0777);
   print "chmoded " . $dir;
   if ($res) {
     print "\nsucess\n";
@@ -51,6 +51,7 @@ function chmodfiles() {
 }
 function ckeditor_set() {
    $record = array('editor' => 'ckeditor', 'format' => 'filtered_html');
+   $record = array('editor' => 'ckeditor', 'format' => 'full_html');
    $res = drupal_write_record('wysiwyg', $record);
    if ($res) {
      print "\nsucess\n";
