@@ -36,17 +36,18 @@ function drushu_install_tasks($install_state) {
     'function' => 'ckeditor_set',
   );
 
-return $tasks;
+  return $tasks;
 }
 
 function chmodfiles() {
- $dir = DRUPAL_ROOT . '/sites/default/files';
- $res = chmod( $dir, 777);
- print "chmoded " . $dir;
- if ($res) {
-   print "\nsucess\n";
- } else {
-   print "\nfailed\n";
+  $dir = DRUPAL_ROOT . '/sites/default/files';
+  $res = chmod( $dir, 777);
+  print "chmoded " . $dir;
+  if ($res) {
+    print "\nsucess\n";
+  } else {
+    print "\nfailed\n";
+    }
 }
 function ckeditor_set() {
    $record = array('editor' => 'ckeditor', 'format' => 'filtered_html');
