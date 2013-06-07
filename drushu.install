@@ -40,29 +40,6 @@ function drushu_install() {
 
   variable_set('theme_settings', $theme_settings);
 
-  /*
-  $theme_drushu_settings = array(
-    'toggle_logo' => 1,
-    'toggle_name' => 1,
-    'toggle_slogan' => 1,
-    'toggle_node_user_picture' => 1,
-    'toggle_comment_user_picture' => 1,
-    'toggle_comment_user_verification' => 1,
-    'toggle_favicon' => 1,
-    'toggle_main_menu' => 1,
-    'toggle_secondary_menu' => 1,
-    'default_logo' => 0,
-    'logo_path' => 'sites/all/themes/drushu_theme/images/logo.png',
-    'logo_upload' => '',
-    'default_favicon' => 0,
-    'favicon_path' => 'sites/all/themes/drushu_theme/images/drushu.ico',
-    'favicon_upload' => '',
-    'favicon_mimetype' => 'image/vnd.microsoft.icon' );
-
-  variable_set('theme_drushu_settings', $theme_settings);
-
-   */
-
  // Any themes without keys here will get numeric keys and so will be enabled, but not placed into variables.
   $enable = array(
     'theme_default' => 'drushu',
@@ -70,7 +47,6 @@ function drushu_install() {
     //'zen'
   );
   theme_enable($enable);
-
 
   foreach ($enable as $var => $theme) {
     if (!is_numeric($var)) {
@@ -83,7 +59,7 @@ function drushu_install() {
   theme_disable(array('bartik'));
 
   // Disable all blocks for current theme
-  //db_query("UPDATE {blocks} SET region = '' WHERE theme = 'drushu'");
+  $res = db_update('block')->fields(array('status'=> 0))->condition('status',1)->execute();
 
   variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
  
