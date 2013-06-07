@@ -33,18 +33,12 @@ function drushu_install() {
   // Don't display date and author information for page nodes by default.
   $theme_settings = variable_get('theme_settings', array());
   $theme_settings['default_favicon'] = FALSE;
-  $theme_settings['favicon_path'] = '/sites/all/themes/drushu_theme/images/drushu.ico';
+  $theme_settings['default_icon'] = FALSE;
+  $theme_settings['logo_path'] = 'sites/all/themes/drushu_theme/images/logo.png';
+  $theme_settings['favicon_path'] = 'sites/all/themes/drushu_theme/images/drushu.ico';
   $theme_settings['favicon_mimetype'] = 'image/vnd.microsoft.icon';
+
   variable_set('theme_settings', $theme_settings);
-
-
- // Any themes without keys here will get numeric keys and so will be enabled, but not placed into variables.
-  $enable = array(
-    'theme_default' => 'drushu',
-    'admin_theme' => 'drushu',
-    //'zen'
-  );
-  theme_enable($enable);
 
   $theme_drushu_settings = array(
     'toggle_logo' => 1,
@@ -65,6 +59,16 @@ function drushu_install() {
     'favicon_mimetype' => 'image/vnd.microsoft.icon' );
 
   variable_set('theme_drushu_settings', $theme_settings);
+
+
+ // Any themes without keys here will get numeric keys and so will be enabled, but not placed into variables.
+  $enable = array(
+    'theme_default' => 'drushu',
+    'admin_theme' => 'drushu',
+    //'zen'
+  );
+  theme_enable($enable);
+
 
   foreach ($enable as $var => $theme) {
     if (!is_numeric($var)) {
