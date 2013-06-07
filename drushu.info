@@ -33,7 +33,6 @@ dependencies[] = transliteration
 dependencies[] = views
 dependencies[] = views_ui
 dependencies[] = wysiwyg
-dependencies[] = backup_migrate
 
 ; Theme
 ;theme[] = drushu
