@@ -40,3 +40,12 @@ dependencies[] = wysiwyg
 ;  Variables
 ;variables['drupal_stale_file_handle'] = 1
 
+; Libraries
+;dependencies[] = 
+;libraries[ckeditor][download][type] = get
+;libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.1/ckeditor...
+;libraries[ckeditor][directory_name] = ckeditor
+;libraries[ckeditor][destination] = 'could be this one'
+libraries[jquery.cycle][download][type] = get
+libraries[jquery.cycle][download][url] = http://malsup.github.com/jquery.cycle.all.js
+libraries[jquery.cycle][directory_name] = jquery.cycle 
