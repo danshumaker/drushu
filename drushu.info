@@ -21,6 +21,7 @@ dependencies[] = update
 ; Contrib
 dependencies[] = admin_menu
 dependencies[] = advanced_help
+dependencies[] = block_class
 dependencies[] = coder
 dependencies[] = coder_review
 dependencies[] = ckeditor
