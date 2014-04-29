@@ -17,7 +17,8 @@ projects[] = "drupal"
 ; Profiles ====================================================================
 projects[drushu][type] = profile
 projects[drushu][download][type] = git
-projects[drushu][download][url] = https://github.com/danshumaker/drushu.git
+;projects[drushu][download][url] = https://github.com/danshumaker/drushu.git
+projects[drushu][download][url] = https://github.com/danshumaker/drushu/tree/master/profile
 projects[drushu][download][branch] = master
 
 ; Includes ====================================================================
