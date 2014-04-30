@@ -1,0 +1,53 @@
+name = DruShu
+description = Shumaker Drupal Install Profile
+version = 1.0
+core = 7.x
+
+; Core
+; dependencies[] = book
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = path
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = update
+
+; Contrib
+dependencies[] = admin_menu
+dependencies[] = advanced_help
+dependencies[] = block_class
+dependencies[] = coder
+dependencies[] = coder_review
+dependencies[] = ckeditor
+dependencies[] = ctools
+dependencies[] = devel
+dependencies[] = module_filter 
+dependencies[] = libraries 
+dependencies[] = token
+dependencies[] = transliteration
+dependencies[] = variable
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = wysiwyg
+
+; Theme
+;theme[] = drushu
+
+;  Variables
+;variables['drupal_stale_file_handle'] = 1
+
+; Libraries
+;dependencies[] = 
+;libraries[ckeditor][download][type] = get
+;libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.1/ckeditor...
+;libraries[ckeditor][directory_name] = ckeditor
+;libraries[ckeditor][destination] = 'could be this one'
+libraries[jquery.cycle][download][type] = get
+libraries[jquery.cycle][download][url] = http://malsup.github.com/jquery.cycle.all.js
+libraries[jquery.cycle][directory_name] = jquery.cycle 
