@@ -16,10 +16,10 @@ projects[] = "drupal"
 
 ; Profiles ====================================================================
 projects[drushu][type] = profile
-projects[drushu][download][type] = git
+;projects[drushu][download][type] = git
+projects[drushu][download][type] = file
 ;projects[drushu][download][url] = https://github.com/danshumaker/drushu.git
-projects[drushu][download][url] = https://github.com/danshumaker/drushu/tree/master/profile
-projects[drushu][download][branch] = master
+projects[drushu][download][url] = https://github.com/danshumaker/drushu/tree/master/profile.tar.gz
 
 ; Includes ====================================================================
 ;includes[] = http://drupalcode.org/project/buildkit.git/blob_plain/dd1c740967b139a03002848bc1ec83e20ca929f7:/drupal-org.make
@@ -56,7 +56,10 @@ projects[wysiwyg][subdir] = "contrib"
 
 ; Themes ======================================================================
 ;projects[] = "drushu_theme"
-projects[drushu_theme][download][type] = git
-projects[drushu_theme][download][url] = https://github.com/danshumaker/drushu_theme.git
+;projects[drushu_theme][download][type] = git
+;projects[drushu_theme][download][url] = https://github.com/danshumaker/drushu_theme.git
+
 projects[drushu_theme][type] = "theme"
+projects[drushu_theme][download][type] = file
+projects[drushu_theme][download][url] = https://github.com/danshumaker/drushu/tree/master/drushu_theme.tar.gz
 
