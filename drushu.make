@@ -32,7 +32,7 @@ projects[drushu][download][url] = https://github.com/danshumaker/drushu/raw/mast
 ;libraries[superfish][type] = "library"
 
 libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.3.1/ckeditor_3.3.1.tar.gz"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/Nightly%20Build/ckeditor_basic_nightly.tar.gz"
 libraries[ckeditor][destination] = "libraries"
 
 ; Modules =====================================================================
